@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Atendimentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Atendimentos</h1>
+
+        <div>
+            <h2>Adicionar Atendimento Realizado</h2>
+            <input type="text" id="protocoloRealizado" placeholder="Digite o número do protocolo">
+            <button id="adicionarRealizado" class="button">Adicionar Realizado</button>
+        </div>
+
+        <div>
+            <h2>Adicionar Atendimento Agendado</h2>
+            <input type="text" id="protocoloAgendado" placeholder="Digite o número do protocolo">
+            <button id="adicionarAgendado" class="button">Adicionar Agendado</button>
+        </div>
+
+        <div>
+            <h2>Adicionar Atendimento Cancelado</h2>
+            <input type="text" id="protocoloCancelado" placeholder="Digite o número do protocolo">
+            <button id="adicionarCancelado" class="button">Adicionar Cancelado</button>
+        </div>
+
+        <div>
+            <h2>Verificar Atendimento</h2>
+            <input type="text" id="protocolo" placeholder="Digite o número do protocolo">
+            <button id="verificar" class="button">Verificar</button>
+        </div>
+
+        <button id="limpar" class="button">Limpar Atendimentos</button>
+        <button id="listar" class="button">Listar Atendimentos</button>
+        <div id="listaAtendimentos"></div>
+
+        <!-- Notificação -->
+        <div id="notificacao" class="notificacao"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

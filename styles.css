@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: transparent; /* Fundo transparente */
+    color: red; /* Cor do texto */
+    border: 2px solid red; /* Borda vermelha */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    text-align: center; /* Centraliza o texto */
+    transition: all 0.3s ease; /* Transição suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 10px; /* Adiciona espaçamento entre botões */
+    display: inline-block; /* Para que a margem funcione corretamente */
+}
+
+.button:hover {
+    color: white; /* Muda a cor do texto ao passar o mouse */
+    background-color: red; /* Fundo vermelho ao passar o mouse */
+    box-shadow: 0 0 20px red, 0 0 40px red; /* Efeito de brilho */
+    text-shadow: 0 0 5px white, 0 0 10px white; /* Efeito de brilho no texto */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.notificacao {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    background-color: rgba(128, 0, 128, 0.8); /* Fundo roxo com transparência */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px purple, 0 0 20px purple; /* Efeito neon */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease; /* Transição suave */
+    z-index: 1000; /* Para ficar acima de outros elementos */
+}
