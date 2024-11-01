@@ -26,4 +26,5 @@ jobs:
       - name: Deploy to Firebase
         run: npm run deploy  # se você tiver um script de deploy no seu package.json
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  # usa o token que você configurou
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DIDIIRED_7E6ED }}  # usa seu token
+
