@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: black;
+    margin: 0; /* Remove margem padrão */
 }
 
 .container {
@@ -12,6 +13,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Permite usar z-index */
+    z-index: 2; /* Garante que o container esteja acima */
 }
 
 input {
@@ -33,6 +36,7 @@ input {
     border-radius: 5px; /* Bordas arredondadas */
     margin-top: 10px; /* Adiciona espaçamento entre botões */
     display: inline-block; /* Para que a margem funcione corretamente */
+    z-index: 1; /* Garante que os botões fiquem acima de outros elementos */
 }
 
 .button:hover {
